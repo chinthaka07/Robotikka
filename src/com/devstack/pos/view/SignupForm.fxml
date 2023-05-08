@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="347.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.SignupFormController">
+   <children>
+      <Text fill="#510303" layoutX="141.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Robotikka" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField labelFloat="true" layoutX="26.0" layoutY="82.0" prefHeight="25.0" prefWidth="282.0" promptText="Email">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="26.0" layoutY="143.0" prefHeight="29.0" prefWidth="282.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="26.0" layoutY="201.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #3498db;" text="Register Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="26.0" layoutY="281.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #34495e;" text="Already Have an Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow />
+         </effect>
+      </JFXButton>
+      <Text layoutX="159.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+   </children>
+</AnchorPane>
