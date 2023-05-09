@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.effect.Shadow?>
@@ -9,24 +10,19 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="351.0" prefWidth="337.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.LoginFormController">
+<AnchorPane fx:id="context" prefHeight="351.0" prefWidth="337.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.LoginFormController">
    <children>
       <Text fill="#510303" layoutX="144.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Robotikka" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <JFXTextField labelFloat="true" layoutX="29.0" layoutY="87.0" prefHeight="25.0" prefWidth="282.0" promptText="Email">
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="29.0" layoutY="87.0" prefHeight="25.0" prefWidth="282.0" promptText="Email">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="29.0" layoutY="148.0" prefHeight="29.0" prefWidth="282.0" promptText="Password">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </JFXTextField>
-      <JFXButton layoutX="29.0" layoutY="206.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #3498db;" text="Sign in" textFill="WHITE">
+      <JFXButton layoutX="29.0" layoutY="206.0" onAction="#btnSignInOnAction" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #3498db;" text="Sign in" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -37,7 +33,7 @@
             <Shadow />
          </effect>
       </JFXButton>
-      <JFXButton layoutX="29.0" layoutY="286.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #34495e;" text="Create an Account" textFill="WHITE">
+      <JFXButton layoutX="29.0" layoutY="286.0" onAction="#btnCreateAnAccountOnAction" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #34495e;" text="Create an Account" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -49,5 +45,10 @@
          </effect>
       </JFXButton>
       <Text layoutX="162.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="29.0" layoutY="144.0" prefHeight="25.0" prefWidth="282.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXPasswordField>
    </children>
 </AnchorPane>
