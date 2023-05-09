@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="customer form ui development">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/UserDto.java" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="access codes created">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/CustomerDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/SignupFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/SignupFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683564186054</updated>
       <workItem from="1683564187319" duration="8394000" />
-      <workItem from="1683639904347" duration="4204000" />
+      <workItem from="1683639904347" duration="4915000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -115,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683645444227</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="access codes created">
+      <created>1683646943048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683646943048</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +131,8 @@
     <MESSAGE value="completed password encrypt &amp; login part" />
     <MESSAGE value="completed password encrypt &amp; login part done" />
     <MESSAGE value="customer form ui development" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer form ui development" />
+    <MESSAGE value="access codes created" />
+    <option name="LAST_COMMIT_MESSAGE" value="access codes created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
