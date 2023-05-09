@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="created signup form">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/util/PasswordManager.java" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="completed password encrypt &amp; login part">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Robotikka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Robotikka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/SignupFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/SignupFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/SignupForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/SignupForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,23 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Developers Stack/Stage 1/Day 48/Robotikka/lib/jbcrypt-0.2.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Developers Stack/Stage 1/Day 48/Robotikka/lib/jbcrypt-0.2.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Developers Stack\Stage 1\Day 48\Robotikka\lib" />
@@ -80,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683564186054</updated>
-      <workItem from="1683564187319" duration="8298000" />
+      <workItem from="1683564187319" duration="8394000" />
+      <workItem from="1683639904347" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -96,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683566271529</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="completed password encrypt &amp; login part">
+      <created>1683627473325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683627473325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +105,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="created signup form" />
-    <option name="LAST_COMMIT_MESSAGE" value="created signup form" />
+    <MESSAGE value="completed password encrypt &amp; login part" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed password encrypt &amp; login part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
