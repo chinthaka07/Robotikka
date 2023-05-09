@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="customer objects added">
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="created customer saved process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683564186054</updated>
       <workItem from="1683564187319" duration="8394000" />
-      <workItem from="1683639904347" duration="6064000" />
+      <workItem from="1683639904347" duration="7086000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683647661902</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created customer saved process">
+      <created>1683648775720</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683648775720</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +159,8 @@
     <MESSAGE value="customer form ui development" />
     <MESSAGE value="access codes created" />
     <MESSAGE value="customer objects added" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer objects added" />
+    <MESSAGE value="created customer saved process" />
+    <option name="LAST_COMMIT_MESSAGE" value="created customer saved process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
