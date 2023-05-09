@@ -20,7 +20,7 @@
          </font>
       </Label>
       <Separator layoutX="11.0" layoutY="41.0" prefHeight="5.0" prefWidth="568.0" />
-      <JFXButton layoutX="222.0" layoutY="14.0" style="-fx-background-color: #7f8c8d;" text="Back to Home" textFill="WHITE">
+      <JFXButton layoutX="222.0" layoutY="14.0" onAction="#btnBackToHomeOnAction" style="-fx-background-color: #7f8c8d;" text="Back to Home" textFill="WHITE">
          <effect>
             <Shadow />
          </effect>
@@ -36,7 +36,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="461.0" layoutY="14.0" style="-fx-background-color: #2980b9;" text="+ New Customer" textFill="WHITE">
+      <JFXButton layoutX="461.0" layoutY="14.0" onAction="#btnNewCustomerOnAction" style="-fx-background-color: #2980b9;" text="+ New Customer" textFill="WHITE">
          <effect>
             <Shadow />
          </effect>
