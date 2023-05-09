@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="context" prefHeight="273.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.DashboardFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="124.0" text="Dashboard" textAlignment="CENTER" textFill="#1e0101">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="44.0" prefHeight="1.0" prefWidth="525.0" />
+      <JFXButton alignment="CENTER" layoutX="14.0" layoutY="59.0" onAction="#btnCustomerOnAction" prefHeight="91.0" prefWidth="165.0" style="-fx-background-color: #16a085;" text="Customer Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Shadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="193.0" layoutY="59.0" onAction="#btnProductOnAction" prefHeight="91.0" prefWidth="165.0" style="-fx-background-color: #d35400;" text="Product Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Shadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="374.0" layoutY="59.0" onAction="#btnPlaceOrderOnAction" prefHeight="91.0" prefWidth="165.0" style="-fx-background-color: #2980b9;" text="Place Order" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Shadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="14.0" layoutY="166.0" onAction="#btnOrderDetailsOnAction" prefHeight="91.0" prefWidth="258.0" style="-fx-background-color: #8e44ad;" text="Order Details" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="281.0" layoutY="166.0" onAction="#btnIncomeReportOnAction" prefHeight="91.0" prefWidth="258.0" style="-fx-background-color: #c0392b;" text="Income Report" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Shadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
