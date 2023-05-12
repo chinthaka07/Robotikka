@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="products interface prepared">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="new product save done">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/DashboardFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -102,7 +101,7 @@
       <workItem from="1683639904347" duration="11961000" />
       <workItem from="1683654952731" duration="5513000" />
       <workItem from="1683823775220" duration="27000" />
-      <workItem from="1683824014990" duration="4289000" />
+      <workItem from="1683824014990" duration="5662000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -188,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683902517511</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new product save done">
+      <created>1683905305029</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683905305029</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +213,8 @@
     <MESSAGE value="customer delete option added" />
     <MESSAGE value="singleton applied" />
     <MESSAGE value="products interface prepared" />
-    <option name="LAST_COMMIT_MESSAGE" value="products interface prepared" />
+    <MESSAGE value="new product save done" />
+    <option name="LAST_COMMIT_MESSAGE" value="new product save done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
