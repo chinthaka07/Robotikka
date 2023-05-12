@@ -80,7 +80,7 @@ public class CustomerFormController {
         ObservableList<CustomerTm> observableList = FXCollections.observableArrayList();
         int counter=1;
         for (CustomerDto dto:
-                searchText.length()>0?DatabaseAccessCode.searchCustomers(searchText):DatabaseAccessCode.findAllCustomers()){
+                searchText.length()>0?new DatabaseAccessCode().searchCustomers(searchText):new DatabaseAccessCode().findAllCustomers()){
             Button btn = new Button("Delete");
             CustomerTm tm = new CustomerTm(
                     counter,dto.getEmail(), dto.getName(), dto.getContact(), dto.getSalary(),
@@ -94,7 +94,7 @@ public class CustomerFormController {
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION,"Are you sure?", ButtonType.YES,ButtonType.NO);
                     Optional<ButtonType> selectedButtonType = alert.showAndWait();
                     if (selectedButtonType.get().equals(ButtonType.YES)){
-                        if (DatabaseAccessCode.deleteCustomer(dto.getEmail())){
+                        if (new DatabaseAccessCode().deleteCustomer(dto.getEmail())){
                             new Alert(Alert.AlertType.CONFIRMATION, "Customer Deleted!").show();
                             loadAllCustomers(searchText);
                         }else{
@@ -115,7 +115,7 @@ public class CustomerFormController {
 
             if (btnSaveUpdate.getText().equals("Save Customer")){
                 if (
-                        DatabaseAccessCode.createCustomer(
+                        new DatabaseAccessCode().createCustomer(
                                 txtEmail.getText(),txtName.getText(),
                                 txtContact.getText(),Double.parseDouble(txtSalary.getText())
                         )
@@ -128,7 +128,7 @@ public class CustomerFormController {
                 }
             }else{
                 if (
-                        DatabaseAccessCode.updateCustomer(
+                        new DatabaseAccessCode().updateCustomer(
                                 txtEmail.getText(),txtName.getText(),
                                 txtContact.getText(),Double.parseDouble(txtSalary.getText())
                         )

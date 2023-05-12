@@ -1,7 +1,6 @@
 package com.devstack.pos.dao.custom;
 
-import com.devstack.pos.dto.Product;
-import com.devstack.pos.entity.User;
+import com.devstack.pos.entity.Product;
 
 import java.sql.SQLException;
 import java.util.List;

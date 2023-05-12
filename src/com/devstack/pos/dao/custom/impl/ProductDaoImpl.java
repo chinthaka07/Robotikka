@@ -2,7 +2,7 @@ package com.devstack.pos.dao.custom.impl;
 
 import com.devstack.pos.dao.custom.ProductDao;
 import com.devstack.pos.db.DbConnection;
-import com.devstack.pos.dto.Product;
+import com.devstack.pos.entity.Product;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

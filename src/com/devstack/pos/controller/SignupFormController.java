@@ -26,7 +26,7 @@ public class SignupFormController {
 
     public void btnRegisterNowOnAction(ActionEvent actionEvent) {
         try {
-            if (DatabaseAccessCode.createUser(txtEmail.getText(), txtPassword.getText())){
+            if (new DatabaseAccessCode().createUser(txtEmail.getText(), txtPassword.getText())){
                 new Alert(Alert.AlertType.CONFIRMATION, "User Saved!").show();
                 clearFields();
 

@@ -32,7 +32,7 @@ public class ProductMainFormController {
 
     private void loadProductId() {
         try {
-            txtProductCode.setText(String.valueOf(DatabaseAccessCode.getLastProductId()));
+            txtProductCode.setText(String.valueOf(new DatabaseAccessCode().getLastProductId()));
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -46,7 +46,7 @@ public class ProductMainFormController {
         try {
             if (btnSaveUpdate.getText().equals("Save Product")) {
 
-                if (DatabaseAccessCode.saveProduct(Integer.parseInt(txtProductCode.getText()), txtProductDescription.getText())) {
+                if (new DatabaseAccessCode().saveProduct(Integer.parseInt(txtProductCode.getText()), txtProductDescription.getText())) {
                     new Alert(Alert.AlertType.CONFIRMATION, "Product Saved!").show();
                     clearFields();
                     loadAllProducts(searchText);
@@ -54,7 +54,7 @@ public class ProductMainFormController {
                     new Alert(Alert.AlertType.WARNING, "Try Again!").show();
                 }
             } else {
-                if (DatabaseAccessCode.saveProduct(Integer.parseInt(txtProductCode.getText()), txtProductDescription.getText())) {
+                if (new DatabaseAccessCode().saveProduct(Integer.parseInt(txtProductCode.getText()), txtProductDescription.getText())) {
                     new Alert(Alert.AlertType.CONFIRMATION, "Product Updated!").show();
                     clearFields();
                     loadAllProducts(searchText);
