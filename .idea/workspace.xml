@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainPage.fxml" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="products interface prepared">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/db/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/db/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/DashboardForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/tm/CustomerTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/tm/CustomerTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "F:/Developers Stack/Stage 1/Day 48/Robotikka",
     "node.js.detected.package.eslint": "true",
@@ -69,6 +69,11 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -97,7 +102,7 @@
       <workItem from="1683639904347" duration="11961000" />
       <workItem from="1683654952731" duration="5513000" />
       <workItem from="1683823775220" duration="27000" />
-      <workItem from="1683824014990" duration="1475000" />
+      <workItem from="1683824014990" duration="4289000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -176,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683653752509</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="products interface prepared">
+      <created>1683902517511</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683902517511</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +206,8 @@
     <MESSAGE value="completed customer data process" />
     <MESSAGE value="customer delete option added" />
     <MESSAGE value="singleton applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="singleton applied" />
+    <MESSAGE value="products interface prepared" />
+    <option name="LAST_COMMIT_MESSAGE" value="products interface prepared" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

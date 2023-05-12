@@ -13,8 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="482.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ProductMainPageController">
+<AnchorPane fx:id="context" prefHeight="482.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ProductMainFormController">
    <children>
       <Label layoutX="12.0" layoutY="11.0" prefHeight="31.0" prefWidth="146.0" text="Product Management" textAlignment="CENTER" textFill="#1e0101">
          <font>
@@ -32,7 +31,7 @@
       </JFXButton>
       <AnchorPane layoutX="14.0" layoutY="51.0" prefHeight="410.0" prefWidth="365.0" style="-fx-background-color: #b2bec3;">
          <children>
-            <JFXButton layoutX="256.0" layoutY="12.0" onAction="#btnNewCustomerOnAction" style="-fx-background-color: #2980b9;" text="+ New Product" textFill="WHITE">
+            <JFXButton layoutX="256.0" layoutY="12.0" onAction="#btnAddNewOnAction" style="-fx-background-color: #2980b9;" text="+ New Product" textFill="WHITE">
                <effect>
                   <Shadow />
                </effect>
@@ -40,17 +39,17 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXTextField editable="false" layoutX="14.0" layoutY="12.0" promptText="Product Code">
+            <JFXTextField fx:id="txtProductCode" editable="false" layoutX="14.0" layoutY="12.0" promptText="Product Code">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXTextField>
-            <TextArea layoutX="14.0" layoutY="46.0" prefHeight="128.0" prefWidth="339.0" promptText="Description">
+            <TextArea fx:id="txtProductDescription" layoutX="14.0" layoutY="46.0" prefHeight="128.0" prefWidth="339.0" promptText="Description">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </TextArea>
-            <JFXButton layoutX="245.0" layoutY="180.0" onAction="#btnNewCustomerOnAction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #2980b9;" text="Save Product" textFill="WHITE">
+            <JFXButton fx:id="btnSaveUpdate" layoutX="245.0" layoutY="180.0" onAction="#btnNewProductOnAction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #2980b9;" text="Save Product" textFill="WHITE">
                <effect>
                   <Shadow />
                </effect>
