@@ -1,10 +1,10 @@
 package com.devstack.pos.dto;
 
 public class CustomerDto {
-    String email;
-    String name;
-    String contact;
-    double salary;
+    private String email;
+    private String name;
+    private String contact;
+    private double salary;
 
     public CustomerDto() {
     }

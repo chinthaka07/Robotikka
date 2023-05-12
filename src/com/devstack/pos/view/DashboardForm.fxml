@@ -26,7 +26,7 @@
             <Shadow />
          </effect>
          <cursor>
-            <Cursor fx:constant="MOVE" />
+            <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
       <JFXButton alignment="CENTER" layoutX="193.0" layoutY="59.0" onAction="#btnProductOnAction" prefHeight="91.0" prefWidth="165.0" style="-fx-background-color: #d35400;" text="Product Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">

@@ -26,18 +26,18 @@ public class CustomerFormController {
     public JFXTextField txtName;
     public JFXTextField txtContact;
     public JFXTextField txtSalary;
-    public JFXTextField txtSearch;
-    public TableView tbl;
+    public JFXButton btnSaveUpdate;
+    public TextField txtSearch;
+    public TableView<CustomerTm> tbl;
     public TableColumn colId;
     public TableColumn colEmail;
     public TableColumn colName;
     public TableColumn colContact;
     public TableColumn colSalary;
     public TableColumn colOperate;
-    public JFXButton btnSaveUpdate;
-    
+
     private String searchText="";
-    
+
     public void initialize() throws SQLException, ClassNotFoundException {
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -48,6 +48,13 @@ public class CustomerFormController {
 
         loadAllCustomers(searchText);
 
+        tbl.getSelectionModel()
+                .selectedItemProperty()
+                .addListener((observable, oldValue, newValue) -> {
+                    if (newValue!=null){
+                        setData(newValue);
+                    }
+                });
         txtSearch.textProperty().addListener((observable, oldValue, newValue) -> {
             searchText=newValue;
             try {
@@ -56,6 +63,7 @@ public class CustomerFormController {
                 throw new RuntimeException(e);
             }
         });
+
     }
 
     private void setData(CustomerTm newValue) {
@@ -66,16 +74,17 @@ public class CustomerFormController {
         txtSalary.setText(String.valueOf(newValue.getSalary()));
         // txtSalary.setText(""+newValue.getSalary());
         txtContact.setText(newValue.getContact());
-
     }
 
     private void loadAllCustomers(String searchText) throws SQLException, ClassNotFoundException {
         ObservableList<CustomerTm> observableList = FXCollections.observableArrayList();
         int counter=1;
-        for (CustomerDto dto: DatabaseAccessCode.searchCustomers(searchText)){
+        for (CustomerDto dto:
+                searchText.length()>0?DatabaseAccessCode.searchCustomers(searchText):DatabaseAccessCode.findAllCustomers()){
             Button btn = new Button("Delete");
             CustomerTm tm = new CustomerTm(
-                    counter,dto.getEmail(),dto.getContact(),dto.getName(),dto.getSalary(),btn
+                    counter,dto.getEmail(), dto.getName(), dto.getContact(), dto.getSalary(),
+                    btn
             );
             observableList.add(tm);
             counter++;
@@ -101,22 +110,23 @@ public class CustomerFormController {
         }
         tbl.setItems(observableList);
     }
-
     public void btnSaveUpdateOnAction(ActionEvent actionEvent) {
-        try {
+        try{
 
-            if (btnSaveUpdate.getText().equals("Save Customer")) {
-                if (DatabaseAccessCode.createCustomer(
-                        txtEmail.getText(), txtName.getText(), txtContact.getText(), Double.parseDouble(txtSalary.getText())
-                )
-                ) {
+            if (btnSaveUpdate.getText().equals("Save Customer")){
+                if (
+                        DatabaseAccessCode.createCustomer(
+                                txtEmail.getText(),txtName.getText(),
+                                txtContact.getText(),Double.parseDouble(txtSalary.getText())
+                        )
+                ){
                     new Alert(Alert.AlertType.CONFIRMATION, "Customer Saved!").show();
                     clearFields();
                     loadAllCustomers(searchText);
-                } else {
+                }else{
                     new Alert(Alert.AlertType.WARNING, "Try Again!").show();
                 }
-            } else {
+            }else{
                 if (
                         DatabaseAccessCode.updateCustomer(
                                 txtEmail.getText(),txtName.getText(),
@@ -133,28 +143,31 @@ public class CustomerFormController {
                     new Alert(Alert.AlertType.WARNING, "Try Again!").show();
                 }
             }
-        }
-        catch (SQLException | ClassNotFoundException e){
+        }catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
+
     }
 
-    private void clearFields(){
+    private void clearFields() {
         txtEmail.clear();
         txtName.clear();
         txtContact.clear();
         txtSalary.clear();
     }
 
-    public void btnBackToHomeOnAction(ActionEvent actionEvent) throws IOException {
-        setUi("DashboardForm");
-    }
 
     private void setUi(String url) throws IOException {
         Stage stage = (Stage) context.getScene().getWindow();
         stage.centerOnScreen();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+url+".fxml"))));
+        stage.setScene(
+                new Scene(FXMLLoader.load(getClass().getResource("../view/" + url + ".fxml")))
+        );
+    }
+
+    public void btnBackToHomeOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("DashboardForm");
     }
 
     public void btnNewCustomerOnAction(ActionEvent actionEvent) {

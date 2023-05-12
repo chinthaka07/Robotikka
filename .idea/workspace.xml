@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="customer delete option added">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/db/DbConnection.java" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ProductMainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ProductMainPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/CustomerFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/db/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/db/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/DashboardForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/tm/CustomerTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/tm/CustomerTm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +31,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -49,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Developers Stack/Stage 1/Day 48/Robotikka/lib/jbcrypt-0.2.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Developers Stack/Stage 1/Day 48/Robotikka",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Developers Stack\Stage 1\Day 48\Robotikka\lib" />
@@ -88,7 +94,10 @@
       <option name="presentableId" value="Default" />
       <updated>1683564186054</updated>
       <workItem from="1683564187319" duration="8394000" />
-      <workItem from="1683639904347" duration="10996000" />
+      <workItem from="1683639904347" duration="11961000" />
+      <workItem from="1683654952731" duration="5513000" />
+      <workItem from="1683823775220" duration="27000" />
+      <workItem from="1683824014990" duration="1475000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -160,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683652935892</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="singleton applied">
+      <created>1683653752509</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683653752509</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +193,8 @@
     <MESSAGE value="created customer saved process" />
     <MESSAGE value="completed customer data process" />
     <MESSAGE value="customer delete option added" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer delete option added" />
+    <MESSAGE value="singleton applied" />
+    <option name="LAST_COMMIT_MESSAGE" value="singleton applied" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

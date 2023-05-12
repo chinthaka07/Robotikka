@@ -3,21 +3,21 @@ package com.devstack.pos.view.tm;
 import javafx.scene.control.Button;
 
 public class CustomerTm {
-    int id;
-    String email;
-    String contact;
-    String name;
-    Double salary;
-    Button deleteButton;
+    private int id;
+    private String email;
+    private String name;
+    private String contact;
+    private double salary;
+    private Button deleteButton;
 
     public CustomerTm() {
     }
 
-    public CustomerTm(int id, String email, String contact, String name, Double salary, Button deleteButton) {
+    public CustomerTm(int id, String email, String name, String contact, double salary, Button deleteButton) {
         this.id = id;
         this.email = email;
-        this.contact = contact;
         this.name = name;
+        this.contact = contact;
         this.salary = salary;
         this.deleteButton = deleteButton;
     }
@@ -38,14 +38,6 @@ public class CustomerTm {
         this.email = email;
     }
 
-    public String getContact() {
-        return contact;
-    }
-
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
-
     public String getName() {
         return name;
     }
@@ -54,11 +46,19 @@ public class CustomerTm {
         this.name = name;
     }
 
-    public Double getSalary() {
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(Double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 

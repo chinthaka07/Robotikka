@@ -5,12 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbConnection {
+    // create database & tables if not exists
     private static DbConnection dbConnection;
     private Connection connection;
 
     private DbConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Robotikka",
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/robotikka",
                 "root","1234");
     }
     public static DbConnection getInstance() throws SQLException, ClassNotFoundException {
