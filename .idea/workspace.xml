@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="new product save done">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/Customer.java" afterDir="false" />
+    <list default="true" id="49384b02-d119-46f9-855b-8585d7b5f5a1" name="Changes" comment="created customer package">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DatabaseAccessCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1683639904347" duration="11961000" />
       <workItem from="1683654952731" duration="5513000" />
       <workItem from="1683823775220" duration="27000" />
-      <workItem from="1683824014990" duration="5662000" />
+      <workItem from="1683824014990" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683565663203</created>
@@ -194,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683905305029</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created customer package">
+      <created>1683906788258</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683906788258</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +220,8 @@
     <MESSAGE value="singleton applied" />
     <MESSAGE value="products interface prepared" />
     <MESSAGE value="new product save done" />
-    <option name="LAST_COMMIT_MESSAGE" value="new product save done" />
+    <MESSAGE value="created customer package" />
+    <option name="LAST_COMMIT_MESSAGE" value="created customer package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
